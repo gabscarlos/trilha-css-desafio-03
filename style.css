@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: 
+        "header header header header header header"
+        "aside main main main main main";
+}
+
+header {
+    grid-area: header;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background-color: #ffffff;
+    margin: 11px 24px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input {
+    width: 348px;
+    height: 40px;
+    border: 1px solid #cccccc;
+}
+
+.search button {
+    width: 57px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border: 1px solid #cccccc;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    height: 34px;
+}
+
+.photo-profile {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+aside {
+    background-color: #ffffff;
+    grid-area: aside;
+}
+
+.icons-aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    margin: 11px 24px;
+}
+
+.icons-aside h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 20px;
+    color: #000000;
+}
+
+.icons-aside h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 20px;
+    color: #000000;
+}
+
+main {
+    background-color: #f9f9f9;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 280px;
+    height: 260px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.thumbs {
+    width: 240px;
+    margin: auto;
+}
+
+.dio-avatar {
+    width: 42px;
+    height: 42px;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.video-info h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;    
+    color: #000000; 
+}
+
+.video-info p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
